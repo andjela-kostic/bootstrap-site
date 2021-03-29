@@ -1,0 +1,45 @@
+.carousel-inner{
+    height:600px;
+}
+#carouselExampleFade{
+    position: relative;
+}
+#dodato{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    background-color: rgb(0,0,0,0.8);
+    top: 20px;
+    right: 10vw;
+    z-index: 1;
+    border: 2px solid wheat;
+}
+#dodato h1,figcaption{
+    color:wheat
+}
+.noveKnjige{
+    width: 90%;
+    margin: 0px auto;
+}
+.strelica{
+background-color: blue;
+padding: 1%;
+}
+.proba{
+    height: 400px;
+    width: 322px;
+    background-color: blue;
+}
+.card-title{
+    font-size: 1.1em;
+}
+.card{
+    position: relative;
+}
+.btn-primary{
+    position: absolute;
+    bottom: 10px;
+}
+.razmakOdDugmeta{
+    margin-bottom: 35px;
+}

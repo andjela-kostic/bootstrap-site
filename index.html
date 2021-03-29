@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Naslovna</title>
+</head>
+<body>
+    <div class="row" id="top1">
+        <div class="col-4 text-center">kcks</div>
+        <div class="col-4 text-center">kcks</div>
+        <div class="col-4 text-center">kcks</div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/img/ajkula.png"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Naslovna</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Knjige
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Na popustu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Top ponuda</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="assets/img/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="assets/img/2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="assets/img/3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+        <div id="dodato">
+            <figure class="text-center p-5">
+                <blockquote class="blockquote">
+                  <h1 class="display-3">BOOKSTORE</h1>
+                </blockquote>
+                <figcaption class="blockquote">
+                  pronađi svoju <cite title="Source Title">omiljenu knjigu</cite>
+                </figcaption>
+              </figure>
+              <div class="position-relative">
+                <button type="button" id="vidi" class="btn btn-outline-primary text-center position-absolute top-50 start-50 translate-middle">Primary</button>
+              </div>              
+        </div>
+      </div>
+      <div class="container" id="novo">
+        <h1 class="text-center display-4 pt-5">NOVO</h1>
+        <hr/>
+        
+       </div>
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex justify-content-around p-5 noveKnjige">
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/nocni-tiga.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Noćni tigar</h5>
+                  <p class="card-text">Jangši Ču</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1">989 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/gospodari-vremena.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gospodari vremena</h5>
+                  <p class="card-text">Eva Garsija Urturi</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/rituali-vode.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rituali vode</h5>
+                  <p class="card-text">Eva Garsija Urturi</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-around p-5 noveKnjige">
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/bez-granica.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bez granica</h5>
+                  <p class="card-text">Džim Kvik</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted">999 rsd </del><span class="fw-bold px-1">899 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/emocionalna-inteligencija.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Emocionalna inteligencija</h5>
+                  <p class="card-text">Danijel Goleman</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/ne-pristajte-na-manje.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ne pristajte na manje</h5>
+                  <p class="card-text">Kris Voss</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-around p-5 noveKnjige">
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/bez-granica.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bez granica</h5>
+                  <p class="card-text">Džim Kvik</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted">999 rsd </del><span class="fw-bold px-1">899 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/emocionalna-inteligencija.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Emocionalna inteligencija</h5>
+                  <p class="card-text">Danijel Goleman</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 13rem;">
+                <img src="assets/img/ne-pristajte-na-manje.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ne pristajte na manje</h5>
+                  <p class="card-text">Kris Voss</p>
+                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+                </div>
+              </div>
+              </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon strelica" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon strelica" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="proba"></div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
