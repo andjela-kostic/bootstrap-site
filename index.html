@@ -9,12 +9,82 @@
     <title>Naslovna</title>
 </head>
 <body>
-    <div class="row" id="top1">
-        <div class="col-4 text-center">kcks</div>
-        <div class="col-4 text-center">kcks</div>
-        <div class="col-4 text-center">kcks</div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="row text-center bg-dark p-1" id="top1">
+      <div class="col-6">
+        <button type="button" id="registrujSe" class="bg-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Registruj se</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registruj se</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Ime:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Prezimeme:</label>
+                      <input type="text" class="form-control" id="recipient-surname">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Email:</label>
+                      <input type="email" class="form-control" id="recipient-email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Lozinka:</label>
+                      <input type="password" class="form-control" id="recipient-password">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Potvrdi lozinku:</label>
+                      <input type="password" class="form-control" id="recipient-password2">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" id="" class="btn btn-primary">Registruj se</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+        <!-- Button trigger modal -->
+          <button type="button" class="bg-dark" id="prijaviSe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Prijavi se
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Prijavi se</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="recipient-email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Lozinka:</label>
+                    <input type="password" class="form-control" id="recipient-password">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Prijavi se</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+   </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="assets/img/ajkula.png"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +121,7 @@
         </div>
       </nav>
 
-      <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleInterval" class="carousel slide carousel-fade " data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="4000">
       <img src="assets/img/1.jpg" class="d-block w-100" alt="...">
@@ -86,116 +156,176 @@
         </div>
       </div>
       <div class="container" id="novo">
+        <!----NOVE KNJIGE---->
         <h1 class="text-center display-4 pt-5">NOVO</h1>
-        <hr/>
-        
-       </div>
-       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row d-flex justify-content-around p-5 noveKnjige">
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/nocni-tiga.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Noćni tigar</h5>
-                  <p class="card-text">Jangši Ču</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1">989 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
+        <hr/>        
+          <div class="row d-flex justify-content-around p-5 noveKnjige">
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/nocni-tiga.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Noćni tigar</h5>
+                <p class="card-text">Jangši Ču</p>
+                <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1">989 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
               </div>
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/gospodari-vremena.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Gospodari vremena</h5>
-                  <p class="card-text">Eva Garsija Urturi</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/gospodari-vremena.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gospodari vremena</h5>
+                <p class="card-text">Eva Garsija Urturi</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
               </div>
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/rituali-vode.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Rituali vode</h5>
-                  <p class="card-text">Eva Garsija Urturi</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/rituali-vode.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rituali vode</h5>
+                <p class="card-text">Eva Garsija Urturi</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
               </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/emocionalna-inteligencija.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Emocionalna inteligencija</h5>
+                <p class="card-text">Danijel Goleman</p>
+                <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>             
           </div>
+          <!----NA POPUSTU---->
+        <h1 class="text-center display-4 pt-5">NA POPUSTU</h1>
+        <hr/>        
+          <div class="row d-flex justify-content-around p-5 noveKnjige">
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/gordost-i-predrasuda-dzejn-ostin-liber-novus.jpg" class="card-img-top" alt="knjiga gordost i predrasuda dzejn ostin liber novus">
+              <div class="card-body">
+                <h5 class="card-title">Gordost i predrasuda</h5>
+                <p class="card-text">Džejn Ostin</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">1320 rsd</del><span class="fw-bold px-1">989 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/elijevo-obecanje-ronald-h-balson.jpg" class="card-img-top" alt="knjiga elijevo obecanje ronald h balson">
+              <div class="card-body">
+                <h5 class="card-title">Razum i osećajnost</h5>
+                <p class="card-text">Džejn Ostin</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/ne-pristajte-na-manje.jpg" class="card-img-top" alt="knjiga ne pristajte na manje">
+              <div class="card-body">
+                <h5 class="card-title">Ne pristajte na manje</h5>
+                <p class="card-text">Kris Voss</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/nemanjici-biografija.png" class="card-img-top" alt="knjiga nemanjici biografija">
+              <div class="card-body">
+                <h5 class="card-title">Nemanjići - Biografija</h5>
+                <p class="card-text">Luka Mičeta</p>
+                <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>             
           </div>
-          <div class="carousel-item">
-            <div class="row d-flex justify-content-around p-5 noveKnjige">
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/bez-granica.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bez granica</h5>
-                  <p class="card-text">Džim Kvik</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted">999 rsd </del><span class="fw-bold px-1">899 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/emocionalna-inteligencija.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Emocionalna inteligencija</h5>
-                  <p class="card-text">Danijel Goleman</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/ne-pristajte-na-manje.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Ne pristajte na manje</h5>
-                  <p class="card-text">Kris Voss</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
-              </div>
+          <div id="prikaziSve" class="row justify-content-md-center text-center">
+            <a href="" class="text-decoration-none col-9"><span class="prikazisveKnjigeTekst">Prikaži sve knjige na popustu</span></a>
           </div>
+            <!----TOP PONUDA---->
+        <h1 class="text-center display-4 pt-5">TOP PONUDA</h1>
+        <hr/>        
+          <div class="row d-flex justify-content-around p-5 noveKnjige">
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/rat-i-mir.jpg" class="card-img-top" alt="knjiga gordost i predrasuda dzejn ostin liber novus">
+              <div class="card-body">
+                <h5 class="card-title">Rat i mir</h5>
+                <p class="card-text">Lav Nikolajevič Tolstoj</p>
+                <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1">1499 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/klub-ubistava-cetvrtkom-ricard-ozman.jpg" class="card-img-top" alt="knjiga klub ubistava cetvrtkom ricard ozman">
+              <div class="card-body">
+                <h5 class="card-title">Klub ubistava četvrtkom</h5>
+                <p class="card-text">Ričard Ozman</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">999 rsd</del><span class="fw-bold px-1"> 899 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/grad-od-pare-karlos-ruis-safon.jpg" class="card-img-top" alt="knjiga Grad od pare Karlos Ruis Safon">
+              <div class="card-body">
+                <h5 class="card-title">Grad od pare</h5>
+                <p class="card-text">Karlos Ruis Safon</p>
+                <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>
+            <div class="card col-3" style="width: 13rem;">
+              <img src="assets/img/glogi-aleksandar-djurisic-vukoti.jpg" class="card-img-top" alt="knjiga glogi aleksandar djurisic vukoti">
+              <div class="card-body">
+                <h5 class="card-title">Glogi</h5>
+                <p class="card-text">Aleksandar Đurišić</p>
+                <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
+                <a href="#" class="btn btn-primary dodajUkorpu">Dodaj u korpu<img src="assets/img/cart.png"/></a>
+              </div>
+            </div>             
           </div>
-          <div class="carousel-item">
-            <div class="row d-flex justify-content-around p-5 noveKnjige">
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/bez-granica.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bez granica</h5>
-                  <p class="card-text">Džim Kvik</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted">999 rsd </del><span class="fw-bold px-1">899 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/emocionalna-inteligencija.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Emocionalna inteligencija</h5>
-                  <p class="card-text">Danijel Goleman</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted"></del><span class="fw-bold px-1"> 990 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 13rem;">
-                <img src="assets/img/ne-pristajte-na-manje.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Ne pristajte na manje</h5>
-                  <p class="card-text">Kris Voss</p>
-                  <p class="razmakOdDugmeta"><del class="text-muted">1.199 rsd</del><span class="fw-bold px-1"> 1.079 rsd</span></p>
-                  <a href="#" class="btn btn-primary">Dodaj u korpu<img src="assets/img/cart.png"/></a>
-                </div>
-              </div>
-              </div>
+          <div id="prikaziSve" class="row justify-content-md-center text-center pb-5">
+            <a href="" class="text-decoration-none"><span class="prikazisveKnjigeTekst">Prikaži sve knjige iz top ponude</span></a>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon strelica" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon strelica" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="proba"></div>
-      </div>
+          <div id="newsL" class="container-fluid row justify-content-md-center text-center p-4">
+            <span class="fs-4 fw-bold col-3 border-end mt-1">NEWSLETTER</span>
+            <span class="col-3 mt-2">Prijavite se na naš newsletter:</span>
+            <div id="potvrdiEmail" class="input-group mb-3 col-6">
+              <input type="text" class="form-control" placeholder="Unesi email" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Prijavi se</button>
+            </div>
+          </div>
+            <footer>
+              <div id="futerGore" class="row justify-content-md-center p-5">
+                <div class="col-4 border-end p-2">
+                  <p class="h5 pt-4">O NAMA</p>
+                  <p>Kupovinom knjiga na sajtu Knjižare Bookstore ostvarujete redovan popust od 10 odsto, dok kupovinom tri ili više knjiga ostvarujete i dodatni količinski popust od 10 odsto na maloprodajne cene knjiga, a tokom posebnih akcija knjige možete kupiti i sa popustima do 90% na određene naslove. Za sve kupovine iznad 2000 dinara kao poklon birate jedno od izdanja Knjižare Bookstore. Za porudžbine iz Srbije u iznosu većem od 2500 dinara dostava kurirskom službom je besplatna. Za kupce iz Beograda dostupna je dostava u roku od 60 minuta.
+
+                  </p>
+                </div>
+                <div class="col-4 border-end p-2">
+                  <p class="h5 p-4">KONTAKT</p>
+                  <ul>
+                    <li>Knjižara Bookstore</li>
+                    <li>Zdravka Čelara 16, Beograd</li>
+                    <li>bookstore16@gmail.com</li>
+                    <li>011321456</li>
+                  </ul>
+                </div>
+                <div class="col-4 p-2">
+                  <p class="h5 p-4">LINKOVI</p>
+                  <ul>
+                    <a href=""><li>Početna</li></a>
+                    <a href=""><li>Knjige</li></a>
+                    <a href=""><li>Na popustu</li></a>
+                    <a href=""><li>Top Ponuda</li></a>
+                    <a href=""><li>Autor</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div id="futerDole" class="row text-center p-3">
+                <span> Copyright  @  Andjela Kostic 2021</span>
+              </div>
+            </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>

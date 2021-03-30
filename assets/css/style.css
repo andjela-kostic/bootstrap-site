@@ -1,15 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 .carousel-inner{
-    height:600px;
+    height:500px;
 }
 #carouselExampleFade{
     position: relative;
 }
 #dodato{
     position: absolute;
-    width: 40%;
-    height: 90%;
+    width: 40vw;
+    max-height: 70%;
     background-color: rgb(0,0,0,0.8);
-    top: 20px;
+    top: 15%;
+    bottom: 15%;
     right: 10vw;
     z-index: 1;
     border: 2px solid wheat;
@@ -17,29 +28,47 @@
 #dodato h1,figcaption{
     color:wheat
 }
-.noveKnjige{
-    width: 90%;
-    margin: 0px auto;
-}
-.strelica{
-background-color: blue;
-padding: 1%;
-}
-.proba{
-    height: 400px;
-    width: 322px;
-    background-color: blue;
-}
+
 .card-title{
     font-size: 1.1em;
 }
 .card{
     position: relative;
+    margin:0.5em
 }
-.btn-primary{
+.dodajUkorpu{
     position: absolute;
     bottom: 10px;
 }
 .razmakOdDugmeta{
     margin-bottom: 35px;
+}
+.prikazisveKnjigeTekst{
+    border-bottom: 1px solid blue;
+    padding: 1%;
+}
+#potvrdiEmail{
+    width: 30%;
+}
+#newsL{
+    background-color:#ffc107;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#registrujSe,#prijaviSe{
+    width: 30%;
+    border:0;
+    color: white;
+}
+#futerDole{
+    background-color:rgb(77, 72, 72);
+    color: white;
+}
+
+#button-addon2{
+    background-color: rgb(17, 12, 12);;
 }
