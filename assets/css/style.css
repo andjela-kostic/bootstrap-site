@@ -1,29 +1,42 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 html,body{
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+.row {
+    margin:0px;
+
+  }
+  .container-xxl{
+      padding: 0;
+
+  }
 
 .carousel-inner{
     height:500px;
 }
-#carouselExampleFade{
+.carousel-item{
+    height: 100%;
+}
+#carouselExampleInterval{
     position: relative;
 }
 #dodato{
     position: absolute;
     width: 40vw;
-    max-height: 70%;
+    max-height: 65%;
     background-color: rgb(0,0,0,0.8);
     top: 15%;
     bottom: 15%;
     right: 10vw;
     z-index: 1;
-    border: 2px solid wheat;
+    border: 2px solid white;
+    border-radius: 20px 0px 20px 0px;
 }
 #dodato h1,figcaption{
     color:wheat
@@ -59,10 +72,18 @@ ul li{
 a{
     text-decoration: none;
 }
+#top1{
+    background-color: rgb(255,193,7);
+}
 #registrujSe,#prijaviSe{
-    width: 30%;
+    width: 70%;
     border:0;
-    color: white;
+    color:black ;
+    margin:5px;
+    background-color: rgb(255,193,7);
+}
+nav{
+    background-color: white;
 }
 #futerDole{
     background-color:rgb(77, 72, 72);
@@ -71,4 +92,110 @@ a{
 
 #button-addon2{
     background-color: rgb(17, 12, 12);;
+}
+.nav-item .nav-link{
+    font-size:1.1em;
+}
+.nav-link :hover{
+ color:black;
+ font-weight: bold;
+}
+.form-control{
+    width: 70%;
+    margin: 0px auto;
+}
+#kontakt{
+    background-image:
+    linear-gradient(to bottom, rgba(34, 16, 1, 0.815), rgba(122, 65, 11, 0.411)),
+    url('../img/susena-daska.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+#kontakt form {
+    padding:2vw;
+    text-align: center;
+}
+ #kontakt form input, #kontakt form textarea{
+    width: 80%;
+    margin: 1vw;
+    padding: 0.7vw;
+    border-radius: 4%;
+  }
+  #brd{
+      margin: 0 auto;
+  }
+ #kontakt form #posalji {
+    background-color: rgb(255,193,7);
+    margin-left: 1.5vw;
+    width: 40%;
+  }
+  
+  .container #contact form #posalji i {
+    font-size: 1.5vw;
+  }
+  #donjinav ul li a{
+    color:black;
+  }
+/*--------------------------------*/
+@media only screen and (max-width: 767px) {
+    #potvrdiEmail{
+        width: 60%;
+        margin:0 auto;
+        margin-top:2vw;
+    }
+    
+}
+@media only screen and (max-width: 925px) {
+    #dodato{
+        width: 55vw;
+    }
+    .carousel-inner{
+        height:450px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #dodato{
+        width: 65vw;
+        max-height: 65%;
+        background-color: rgb(0,0,0,0.8);
+        top: 15%;
+        bottom: 15%;
+        right: 17vw;
+    }
+    .carousel-inner{
+        height:400px;
+    }
+    .translate-middle {
+        transform: translate(-50%,-80%)!important;
+    }
+}
+@media only screen and (max-width: 570px) {
+   #dodato figure{
+       padding: 5vw !important;
+   }
+   #potvrdiEmail{
+    width: 70%;
+
+}
+}
+@media only screen and (max-width: 992px) {
+     .border-end{
+        border-right:0px!important;
+
+    }
+}
+@media only screen and (max-width: 400px) {
+    #potvrdiEmail{
+       width: 85%;
+   }
+   .display-3 {
+    font-size: calc(1.525rem + 2.7vw);
+   }
+   .carousel-inner{
+    height:300px;
+    }
+    #dodato{
+        width: 65vw;
+        max-height: 85%;
+    }
 }
