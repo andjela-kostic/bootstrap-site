@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 html,body{
     width: 100%;
@@ -189,7 +189,7 @@ nav{
        width: 85%;
    }
    .display-3 {
-    font-size: calc(1.525rem + 2.7vw);
+    font-size: calc(1.525rem + 1.5vw);
    }
    .carousel-inner{
     height:300px;
